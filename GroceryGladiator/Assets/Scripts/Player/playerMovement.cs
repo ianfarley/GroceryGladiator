@@ -5,15 +5,16 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     private bool canMove; //Boolean to disable/enable movement
+    private bool isRotating;
     private Vector3 originalPos; //OriginalPos saves player location and used for collision check
     private Vector3 targetPos;  //Mark the intended position the player will go
     private Vector3 targetRot; //new rotation value after a key press
-    private float rotValue;
-    private float timeToMove = 1.0f;
+
     void Start()
     {
         targetPos = transform.position;
         canMove = true;
+        isRotating = false;
     }
 
     void Update()
@@ -24,43 +25,53 @@ public class playerMovement : MonoBehaviour
     public void GetMoveKey()
     {
         //Move forward by the value of 1 based on player's facing direction
-        //Can only if canMove is true
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && canMove)
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             originalPos = transform.position;
             targetPos += transform.forward;
-            //Debug.Log("New position:" + targetPos.x + ", " + targetPos.y + ", " + targetPos.z);
 
-            MovePlayer(targetPos);
+            //Can move if the player is not rotating and has the option to move
+            if (canMove == true && isRotating == false)
+            {
+                MovePlayer(targetPos);
+            }
         }
 
         //Turn 180 degree and move toward that direction
-        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow) && canMove)
+        if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            StartCoroutine(RotatePlayer(Vector3.up, 180, 0.5f));
+            if (canMove == true && isRotating == false)
+            {
+                StartCoroutine(RotatePlayer(Vector3.up, 180, 0.75f));
+            }
         }
 
         //Turn 90 to the character's right and move toward that direction
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) && canMove)
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            StartCoroutine(RotatePlayer(Vector3.up, 90, 0.5f));
+            if (canMove == true && isRotating == false)
+            {
+                StartCoroutine(RotatePlayer(Vector3.up, 90, 0.75f));
+            }
         }
 
-
         //Turn 90 to the character's left and move toward that direction
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && canMove)
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            StartCoroutine(RotatePlayer(Vector3.up, -90, 0.5f));
+            if (canMove == true && isRotating == false)
+            {
+                StartCoroutine(RotatePlayer(Vector3.up, -90, 0.75f));
+            }
         }
     }
 
     private void MovePlayer(Vector3 destinationPos)
     {
+        canMove = false;
         //Disable further movement input until character reaches targetPos
         while (transform.position != targetPos)
         {
-            canMove = false;
-            transform.position = Vector3.Lerp (transform.position, targetPos, 1.0f * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, targetPos, 0.1f * Time.deltaTime);
 
 
             //Do a collision check here
@@ -76,11 +87,13 @@ public class playerMovement : MonoBehaviour
             }
         }
         canMove = true;
+        Debug.Log("Done moving.");
         originalPos = transform.position;
     }
 
     IEnumerator RotatePlayer(Vector3 axis, float angle, float duration)
     {
+        isRotating = true;
         canMove = false;
         Quaternion currentRot = transform.rotation;
         Quaternion newRot = transform.rotation;
@@ -90,12 +103,15 @@ public class playerMovement : MonoBehaviour
 
         while(elaspedTime < duration)
         {
-            canMove = false;
+
             transform.rotation = Quaternion.Slerp(currentRot, newRot, elaspedTime / duration);
             elaspedTime += Time.deltaTime;
             yield return null;
+
         }
         canMove = true;
+        isRotating = false;
         transform.rotation = newRot;
+        transform.position = originalPos;
     }
 }
