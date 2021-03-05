@@ -6,6 +6,7 @@ public class playerMovement : MonoBehaviour
 {
     private bool canMove; //Boolean to disable/enable movement
     private bool isRotating;
+    private bool hasCollided;
     private Vector3 originalPos; //OriginalPos saves player location and used for collision check
     private Vector3 targetPos;  //Mark the intended position the player will go
     private Vector3 targetRot; //new rotation value after a key press
@@ -15,6 +16,7 @@ public class playerMovement : MonoBehaviour
         targetPos = transform.position;
         canMove = true;
         isRotating = false;
+        hasCollided = false;
     }
 
     void Update()
@@ -67,9 +69,10 @@ public class playerMovement : MonoBehaviour
 
     private void MovePlayer(Vector3 destinationPos)
     {
+        originalPos = transform.position;
         canMove = false;
         //Disable further movement input until character reaches targetPos
-        while (transform.position != targetPos)
+        while (transform.position != targetPos && hasCollided == false)
         {
             transform.position = Vector3.Lerp(transform.position, targetPos, 0.1f * Time.deltaTime);
 
@@ -77,17 +80,23 @@ public class playerMovement : MonoBehaviour
             //Do a collision check here
             //If a player collides with anything, set targetPos as originalPos
 
-
-
             //Because move towards may never set the player's position value as an integer,
             //immediately "warp" player to the exact position
             if (Vector3.Distance(transform.position, targetPos) < 0.005f)
             {
-                transform.position = targetPos;
+                transform.position = new Vector3(targetPos.x, targetPos.y, targetPos.z);
             }
         }
+
+        if (hasCollided == true)
+        {
+            Debug.Log("Resetting player's location....");
+            targetPos = originalPos;
+            transform.position = new Vector3(targetPos.x, targetPos.y, targetPos.z);
+        }
+
         canMove = true;
-        Debug.Log("Done moving.");
+        hasCollided = false;
         originalPos = transform.position;
     }
 
@@ -103,7 +112,6 @@ public class playerMovement : MonoBehaviour
 
         while(elaspedTime < duration)
         {
-
             transform.rotation = Quaternion.Slerp(currentRot, newRot, elaspedTime / duration);
             elaspedTime += Time.deltaTime;
             yield return null;
@@ -113,5 +121,15 @@ public class playerMovement : MonoBehaviour
         isRotating = false;
         transform.rotation = newRot;
         transform.position = originalPos;
+    }
+
+    void OnCollisionEnter(Collision obj)
+    {
+        if(obj.gameObject.tag=="Obstacle")
+        {
+            targetPos = originalPos;
+            hasCollided = true;
+            Debug.Log("Hit something!");
+        }                
     }
 }

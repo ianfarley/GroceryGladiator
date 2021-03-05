@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\playerMovement.cs" />
+    <Compile Include="Assets\Scripts\System\CollectibleBehavior.cs" />
+    <Compile Include="Assets\Scripts\System\theGameManager.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovements.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
