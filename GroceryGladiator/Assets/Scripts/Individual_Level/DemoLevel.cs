@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DemoLevel : MonoBehaviour
 {
-    public static float thisLevelTime = 120; //in seconds
+    public static float thisLevelTime = 60; //in seconds
     void Start()
     {
         LevelManager.SetTimer(thisLevelTime);
