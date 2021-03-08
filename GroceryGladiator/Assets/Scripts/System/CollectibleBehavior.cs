@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CollectibleBehavior : MonoBehaviour
 {
-
     public string collectibleName;
     public GameObject myObject;
 
@@ -28,7 +27,7 @@ public class CollectibleBehavior : MonoBehaviour
             LevelManager.UpdateLevelCollectibles(this.collectibleName);
             //Signal UI to update
             //Destroy object
-            Debug.Log("Destroying:" + collectibleName);
+            Debug.Log("Destroying object named: " + collectibleName);
             Destroy(this.gameObject);
         }
     }

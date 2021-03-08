@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class theGameManager : MonoBehaviour
 {
-    private bool hasWon;
+    public static bool hasWon;
 
     void Start()
     {
@@ -21,5 +21,12 @@ public class theGameManager : MonoBehaviour
     public static void WonTheGame()
     {
         Debug.Log("Player has won the game!");
+        hasWon = true;
+    }
+
+    public static void LoseTheGame()
+    {
+        Debug.Log("Player has lost the game!");
+        PlayerMovements.canMove = false;
     }
 }
