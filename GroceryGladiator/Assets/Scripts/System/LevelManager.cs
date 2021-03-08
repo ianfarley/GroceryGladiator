@@ -65,16 +65,13 @@ public class LevelManager : MonoBehaviour
     public static void SetTimer(float time)
     {
         newTime = time;
-        Debug.Log("New time set: " + newTime);
     }
 
     public static float GetTimer()
     {
         if (timer == 999.00f)
         {
-            Debug.Log("newTime: " + newTime);
             timer = newTime;
-            Debug.Log("Setting time: " + timer);
             return timer;
         }
         else
