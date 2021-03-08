@@ -8,11 +8,10 @@ public class CollectibleBehavior : MonoBehaviour
     public string collectibleName;
     public GameObject myObject;
 
-
     void Start()
     {
         myObject = this.gameObject;
-        collectibleName = myObject.name;
+        this.collectibleName = this.myObject.name;
     }
 
     // Update is called once per frame
@@ -25,7 +24,8 @@ public class CollectibleBehavior : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            //Notify game manager that this collectible was picked up by the player
+            //Notify level manager of collectible collected
+            LevelManager.UpdateLevelCollectibles(this.collectibleName);
             //Signal UI to update
             //Destroy object
             Debug.Log("Destroying:" + collectibleName);
