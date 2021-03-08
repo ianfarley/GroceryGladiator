@@ -15,5 +15,11 @@ public class UI_Functionality : MonoBehaviour
         SceneManager.LoadScene("Noel_LevelBlockout");
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
+
 
 }
