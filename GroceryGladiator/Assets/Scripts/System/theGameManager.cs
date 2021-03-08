@@ -11,9 +11,9 @@ public class theGameManager : MonoBehaviour
         hasWon = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //Reset variables when the scene is the menu
 
     }
 

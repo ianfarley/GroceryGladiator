@@ -26,6 +26,10 @@ public class CollectibleBehavior : MonoBehaviour
             //Notify level manager of collectible collected
             LevelManager.UpdateLevelCollectibles(this.collectibleName);
             //Signal UI to update
+
+
+
+
             //Destroy object
             Debug.Log("Destroying object named: " + collectibleName);
             Destroy(this.gameObject);

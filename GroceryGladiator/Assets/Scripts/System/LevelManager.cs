@@ -13,7 +13,6 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        timer = GetTimer();
         levelCollectibles = GameObject.FindGameObjectsWithTag("Collectible");
         numOfCollectibles = levelCollectibles.Length;
         nameOfCollectibles = new List<string>();
@@ -27,11 +26,15 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(timer == 999.0f)
+        {
+            timer = GetTimer();
+        }
+
         //Count down the time
         if (timer > 0 && theGameManager.hasWon == false)
         {
             timer -= Time.deltaTime;
-            
             Debug.Log("Time Remaning: " + Mathf.RoundToInt(timer) + " seconds");
         }
 
@@ -62,13 +65,16 @@ public class LevelManager : MonoBehaviour
     public static void SetTimer(float time)
     {
         newTime = time;
+        Debug.Log("New time set: " + newTime);
     }
 
-    public float GetTimer()
+    public static float GetTimer()
     {
         if (timer == 999.00f)
         {
+            Debug.Log("newTime: " + newTime);
             timer = newTime;
+            Debug.Log("Setting time: " + timer);
             return timer;
         }
         else
