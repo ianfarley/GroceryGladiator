@@ -21,6 +21,7 @@ public class theGameManager : MonoBehaviour
     {
         Debug.Log("Player has won the game!");
         hasWon = true;
+        PlayerMovements.canMove = false;
     }
 
     public static void LoseTheGame()
