@@ -13,6 +13,10 @@ public class theGameManager : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         //Reset variables when the scene is the menu
 
     }

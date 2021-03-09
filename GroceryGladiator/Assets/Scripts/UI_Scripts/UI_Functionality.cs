@@ -21,5 +21,12 @@ public class UI_Functionality : MonoBehaviour
         Application.Quit();
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 
 }
