@@ -16672,6 +16672,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.88486004
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.46585703
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014002, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 55.531
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014005, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: m_Depth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014005, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: field of view
+      value: 52.84389
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014005, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: far clip plane
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 274748250418014005, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 313742820297169942, guid: 9943a94b45f119647853e6534ad01f32, type: 3}
       propertyPath: m_RootOrder
       value: 8
