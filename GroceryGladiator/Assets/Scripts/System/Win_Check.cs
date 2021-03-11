@@ -13,6 +13,7 @@ public class Win_Check : MonoBehaviour
             if (LevelManager.canCheckOut == true)
             {
                 theGameManager.WonTheGame();
+                UI_Timer.timeIsRunning = false;
             }
         }
     }

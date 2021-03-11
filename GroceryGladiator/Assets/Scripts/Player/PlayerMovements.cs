@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerMovements : MonoBehaviour
 {
     private Rigidbody playerRig;
-    public float playerMoveSpeed = 110.0f;
-    public float playerRotationSpeed = 45.0f;
+    public float playerMoveSpeed = 130.0f;
+    public float playerRotationSpeed = 50.0f;
     public static bool canMove;
 
     void Start()

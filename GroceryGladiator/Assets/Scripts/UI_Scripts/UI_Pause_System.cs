@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test_Level : MonoBehaviour
+public class UI_Pause_System : MonoBehaviour
 {
-    public static float thisLevelTime = 120; //in seconds
+
+
     void Start()
     {
-        UI_Timer.SetTimer(thisLevelTime);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
