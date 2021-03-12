@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 2549ae1c646aded45bd1a51667910530
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d6c11900303cd404ea40ef1b9b1a5fe4
+  - enabled: 1
+    path: Assets/Scenes/Noel_LevelBlockout.unity
+    guid: 5b460bde0006dd4489b1fd27792ad9b7
   m_configObjects: {}
