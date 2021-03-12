@@ -4,16 +4,46 @@ using UnityEngine;
 
 public class UI_Pause_System : MonoBehaviour
 {
-
-
+    private bool isPaused;
+    public GameObject pausePanel;
     void Start()
     {
-
+        isPaused = false;
+        pausePanel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(isPaused == false)
+            {
+                isPaused = true;
 
+                //Stops everything!
+                Time.timeScale = 0; 
+
+                //Open pause panel
+                pausePanel.SetActive(true); 
+
+                //Disables player movement controls
+                PlayerMovements.canMove = false; 
+            }
+
+            else if(isPaused == true)
+            {
+                isPaused = false;
+
+                //Resumes everything
+                Time.timeScale = 1;
+
+                //Close pause panel
+                pausePanel.SetActive(false);
+
+                //Re-enables player movement controls
+                PlayerMovements.canMove = true;
+            }
+        }
     }
 }
