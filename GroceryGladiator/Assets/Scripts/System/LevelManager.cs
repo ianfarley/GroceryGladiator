@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
     {
         if(numOfCollectibles > 0)
         {
-            Debug.Log("Remaining Collectibles: " + numOfCollectibles);
+            //Debug.Log("Remaining Collectibles: " + numOfCollectibles);
         }
         else if (numOfCollectibles <= 0)
         {

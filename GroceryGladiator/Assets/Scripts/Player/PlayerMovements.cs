@@ -13,7 +13,7 @@ public class PlayerMovements : MonoBehaviour
     {
         canMove = true;
         playerRig = gameObject.GetComponent<Rigidbody>();
-        DontDestroyOnLoad(this.gameObject);
+       // DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame

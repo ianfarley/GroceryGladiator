@@ -60,14 +60,17 @@
     <Compile Include="Assets\Scripts\System\CollectibleBehavior.cs" />
     <Compile Include="Assets\Scripts\UI_Scripts\UI_Functionality.cs" />
     <Compile Include="Assets\Scripts\Individual_Level\DemoLevel.cs" />
+    <Compile Include="Assets\Scripts\UI_Scripts\UI_Toggle_List.cs" />
+    <Compile Include="Assets\Scripts\System\UI_Timer.cs" />
     <Compile Include="Assets\Scripts\NPC\GrannyPatrolAgent.cs" />
+    <Compile Include="Assets\Scripts\UI_Scripts\UI_Pause_System.cs" />
     <Compile Include="Assets\Scripts\System\theGameManager.cs" />
     <Compile Include="Assets\Scripts\Individual_Level\Test_Level.cs" />
     <Compile Include="Assets\Scripts\System\LevelManager.cs" />
     <Compile Include="Assets\Scripts\System\Win_Check.cs" />
-    <Compile Include="Assets\Scripts\System\UI_Timer.cs" />
-    <Compile Include="Assets\Scripts\UI_Scripts\UI_Pause_System.cs" />
-    <Compile Include="Assets\Scripts\UI_Scripts\UI_Toggle_List.cs" />
+    <Compile Include="Assets\Scripts\UI_Scripts\UI_QuitButton.cs" />
+    <Compile Include="Assets\Scripts\UI_Scripts\UI_ResumeButton.cs" />
+    <Compile Include="Assets\Scripts\UI_Scripts\UI_RestartButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
