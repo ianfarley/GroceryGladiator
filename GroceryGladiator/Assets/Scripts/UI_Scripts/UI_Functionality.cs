@@ -21,6 +21,11 @@ public class UI_Functionality : MonoBehaviour
         Application.Quit();
     }
 
+    public void QuitToMainMenu ()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+   
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
