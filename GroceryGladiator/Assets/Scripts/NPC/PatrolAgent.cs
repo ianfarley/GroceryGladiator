@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class GrannyPatrolAgent : MonoBehaviour
+public class PatrolAgent : MonoBehaviour
 {
     [SerializeField]
     private Transform[] points;
@@ -19,6 +19,7 @@ public class GrannyPatrolAgent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Stops NPC from auto-braking during turns
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
         GoToNextPoint();
