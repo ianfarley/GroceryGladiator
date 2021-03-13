@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class UI_Pause_System : MonoBehaviour
 {
-    private bool isPaused;
+    public static bool isPaused;
     public GameObject pausePanel;
     void Start()
     {
         isPaused = false;
         pausePanel.SetActive(false);
+
+        //Useful when player restarts
+        if (isPaused == false)
+        {
+            Time.timeScale = 1;
+        }
     }
 
     // Update is called once per frame
