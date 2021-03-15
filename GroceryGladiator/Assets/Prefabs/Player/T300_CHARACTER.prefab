@@ -6996,6 +6996,7 @@ GameObject:
   - component: {fileID: 274748248489641851}
   - component: {fileID: 274748248489641848}
   - component: {fileID: 274748248489641849}
+  - component: {fileID: 5224197811451937326}
   m_Layer: 0
   m_Name: T300_CHARACTER
   m_TagString: Player
@@ -7089,6 +7090,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMoveSpeed: 130
   playerRotationSpeed: 50
+  anim: {fileID: 0}
+--- !u!95 &5224197811451937326
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085776263577339564}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b622bf9b93eea04abd9e9dc4011c9e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1092456929999737204
 GameObject:
   m_ObjectHideFlags: 0
@@ -17933,7 +17954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7245851007490120333
 Transform:
   m_ObjectHideFlags: 0
