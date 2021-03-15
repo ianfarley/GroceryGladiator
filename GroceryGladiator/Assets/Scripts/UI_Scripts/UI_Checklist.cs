@@ -7,7 +7,10 @@ public class UI_Checklist : MonoBehaviour
 {
     public List<GameObject> neededIngredients;
     public List<Image> ingredientImage;
-    public Image crossOut;
+    public List<Image> smallCheckListCross;
+    public List<Image> largeCheckListCross;
+    public GameObject smallCheckList;
+    public GameObject largeCheckList;
 
     void Start()
     {
