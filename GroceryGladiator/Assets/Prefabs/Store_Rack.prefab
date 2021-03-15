@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4658462513556754189}
   - component: {fileID: 1416652041161434468}
   - component: {fileID: 1778063653025164649}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: grocery_rack_fencel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4357709278315719439}
   - component: {fileID: 3150307667571652493}
   - component: {fileID: 3150307667571652492}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Store_Rack
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 7561453466011009273}
   - component: {fileID: 8254511265904471934}
   - component: {fileID: 1658455692390534803}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: grocery_rack_shlef
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 8599950621250433587}
   - component: {fileID: 7132470862512306723}
   - component: {fileID: 2599111033864080511}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: grocery_rack_fencer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -399,7 +399,6 @@ GameObject:
   - component: {fileID: 6598768675976334269}
   - component: {fileID: 6598768675976334257}
   - component: {fileID: 6598768675976334258}
-  - component: {fileID: 3327781377156317860}
   m_Layer: 5
   m_Name: PLAYER_HUD
   m_TagString: Untagged
@@ -519,21 +518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 6598768675924707047}
---- !u!114 &3327781377156317860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6598768675976334268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5874cb2284af20348aa2bfe18b39053f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neededIngredients: []
-  ingredientImage: []
-  crossOut: {fileID: 0}
 --- !u!1 &6598768676170979956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,7 +996,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neededIngredients: []
   ingredientImage: []
-  crossOut: {fileID: 0}
+  smallCheckListCross: []
+  largeCheckListCross: []
+  smallCheckList: {fileID: 0}
+  largeCheckList: {fileID: 0}
 --- !u!1 &6598768676860554533
 GameObject:
   m_ObjectHideFlags: 0
