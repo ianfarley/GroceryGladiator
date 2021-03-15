@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class GrannyPatrolAgent : MonoBehaviour
+public class PatrolAgent : MonoBehaviour
 {
     [SerializeField]
     private Transform[] points;
