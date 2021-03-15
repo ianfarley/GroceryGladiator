@@ -25,6 +25,11 @@ public class UI_Functionality : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Options ()
+    {
+        SceneManager.LoadScene("Options Menu");
+    }
    
     public void Update()
     {
