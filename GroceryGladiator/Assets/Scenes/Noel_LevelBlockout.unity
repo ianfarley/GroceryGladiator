@@ -14342,6 +14342,7 @@ MonoBehaviour:
   - {fileID: 1578186667}
   - {fileID: 1724124441}
   minRemainingDistance: 0.5
+  jjAnim: {fileID: 0}
 --- !u!195 &111850209
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -17594,6 +17595,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 126
       objectReference: {fileID: 0}
+    - target: {fileID: 3150307667571652493, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3184780907323150432, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -18206,6 +18211,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3150307667571652492, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3150307667571652493, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -18213,6 +18222,14 @@ PrefabInstance:
     - target: {fileID: 3150307667571652493, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
       propertyPath: m_Constraints
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150307667571652493, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150307667571652493, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3184780907323150432, guid: 126be7ede62c0d544aaaa70c7750a2dc, type: 3}
       propertyPath: m_RootOrder
@@ -18468,7 +18485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7357546215556606409, guid: 4313cdc0f4308b74bac20b86e9df56c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.34
+      value: 3.111
       objectReference: {fileID: 0}
     - target: {fileID: 7357546215556606409, guid: 4313cdc0f4308b74bac20b86e9df56c5, type: 3}
       propertyPath: m_LocalPosition.z

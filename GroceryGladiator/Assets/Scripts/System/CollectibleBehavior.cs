@@ -10,7 +10,7 @@ public class CollectibleBehavior : MonoBehaviour
     public Image largeListCross;
     //private bool canPick;
     public GameObject playerObject;
-    private float pickupRange = 1.75f;
+    private float pickupRange = 2.0f;
     void Start()
     {
        // this.canPick = false;
