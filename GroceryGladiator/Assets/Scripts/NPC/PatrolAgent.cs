@@ -15,6 +15,7 @@ public class PatrolAgent : MonoBehaviour
 
     private NavMeshAgent agent;
 
+    public Animator jjAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class PatrolAgent : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.autoBraking = false;
         GoToNextPoint();
+        jjAnim = gameObject.GetComponent<Animator>();
     }
 
     void GoToNextPoint()

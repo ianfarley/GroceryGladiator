@@ -27385,6 +27385,7 @@ GameObject:
   - component: {fileID: 3233037870074346734}
   - component: {fileID: 3233037870074346732}
   - component: {fileID: 3233037870074346735}
+  - component: {fileID: 811569514383789309}
   m_Layer: 0
   m_Name: JJ_CHILD_MALE
   m_TagString: Untagged
@@ -27441,6 +27442,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   minRemainingDistance: 0.5
+  jjAnim: {fileID: 0}
 --- !u!195 &3233037870074346735
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -27463,6 +27465,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &811569514383789309
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314681990162134419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b36358d69bfa23a46837c9ab224b4dc2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2316301889736019980
 GameObject:
   m_ObjectHideFlags: 0
