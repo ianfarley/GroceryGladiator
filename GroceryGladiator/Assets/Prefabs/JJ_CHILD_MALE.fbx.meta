@@ -3,10 +3,95 @@ guid: 39ef80c0e67527c4f8f3f9a2fd9a0513
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 2c7512c983aee1c4e90dd6e635cd94bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shorts
+    second: {fileID: 2100000, guid: 41d0060577547804ca66ba1acd6e2ad3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teeth
+    second: {fileID: 2100000, guid: 2b2f35478340fbb4891f4a51319a2444, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asBlack
+    second: {fileID: 2100000, guid: 1a0bb454db2149b41a285359e864a275, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asGreen
+    second: {fileID: 2100000, guid: f9871f33f3ac5964a9fa0503be0b9481, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asRed
+    second: {fileID: 2100000, guid: 1d6b847c386723e4ea4c3be18fefeb2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: asWhite
+    second: {fileID: 2100000, guid: 7434b3afb86e9244fb8a9be67a85cf34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: cedb22433a113df4e860baa98b247107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyeHighlights
+    second: {fileID: 2100000, guid: e89730e2b6aac5445aa7f912d6de8d0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_blinn1SG1
+    second: {fileID: 2100000, guid: d4f6767a44bf7a94f88ce9fb8c4cc53f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 61daee4722fdd824eb1f0041efbf79a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rsMaterial2
+    second: {fileID: 2100000, guid: 52889d4199dbfaa4dba1da407a9504ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt
+    second: {fileID: 2100000, guid: ccce24dcc6d8be444a77b34738d1b49b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tongue1
+    second: {fileID: 2100000, guid: 91bcc5eeb82c12a4386ce1e924e3be49, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Eye_TM
+    second: {fileID: 2800000, guid: 7fdcfa7106eedb641a9c629ca7336b6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shoes_TM_L
+    second: {fileID: 2800000, guid: 4b4bddf3508ef6a45a0f1e3dc764e479, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shoes_TM_R
+    second: {fileID: 2800000, guid: 670aeea8fc113aa42b4ee19b11c247eb, type: 3}
   materials:
-    materialImportMode: 2
-    materialName: 0
+    materialImportMode: 1
+    materialName: 1
     materialSearch: 1
     materialLocation: 1
   animations:
