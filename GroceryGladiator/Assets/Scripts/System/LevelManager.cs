@@ -35,10 +35,10 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public static void UpdateLevelCollectibles(string collectedName)
+    public static void UpdateLevelCollectibles()
     {
-        levelCollectibles = GameObject.FindGameObjectsWithTag("Collectible");
+        //levelCollectibles = GameObject.FindGameObjectsWithTag("Collectible");
         numOfCollectibles -= 1;
-        nameOfCollectibles.Remove(collectedName);
+        //nameOfCollectibles.Remove(collectedName);
     }
 }

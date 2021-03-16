@@ -6,72 +6,37 @@ using UnityEngine.UI;
 public class CollectibleBehavior : MonoBehaviour
 {
     public string collectibleName;
-    public Image smallListCross; 
-    public Image largeListCross;
-    //private bool canPick;
+    public Button ingredientButton;
+    public Canvas myCanvas;
+    public Canvas selectionCanvas;
     public GameObject playerObject;
     private float pickupRange = 2.0f;
     void Start()
     {
-       // this.canPick = false;
-        this.collectibleName = this.gameObject.name;
+        selectionCanvas.gameObject.SetActive(false);
+        myCanvas.gameObject.SetActive(false);
+       this.collectibleName = this.gameObject.name;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-    /*
-    void OnTriggerEnter(Collider col)
-    {
-        if(col.gameObject.name == "Pickup_Range")
-        {
-            this.canPick = true;
-        }
-    }
-
-    void OnTriggerExit(Collider col)
-    {
-        if (col.gameObject.name == "Pickup_Range")
-        {
-            this.canPick = false;
-        }
-    }
-    */
-    void OnMouseDown()
-    {
-        Debug.Log(this.gameObject.name + " has been clicked!");
         if (Vector3.Distance(playerObject.transform.position, this.gameObject.transform.position) < pickupRange)
         {
-            //Notify level manager of collectible collected
-            LevelManager.UpdateLevelCollectibles(this.collectibleName);
-            //Signal UI to update
-            smallListCross.gameObject.SetActive(true);
-            largeListCross.gameObject.SetActive(true);
-
-            //Destroy object
-            Debug.Log("Destroying object named: " + collectibleName);
-            Destroy(this.gameObject);
+            myCanvas.gameObject.SetActive(true);
         }
-        /*
-        if (canPick)
+    }
+
+    public void OnButtonClick()
+    {
+        if (Vector3.Distance(playerObject.transform.position, this.gameObject.transform.position) < pickupRange)
         {
-            //Notify level manager of collectible collected
-            LevelManager.UpdateLevelCollectibles(this.collectibleName);
-            //Signal UI to update
-            smallListCross.gameObject.SetActive(true);
-            largeListCross.gameObject.SetActive(true);
-
-            //Destroy object
-            Debug.Log("Destroying object named: " + collectibleName);
-            Destroy(this.gameObject);
+            selectionCanvas.gameObject.SetActive(true);
         }
+    }
 
-        else if (!canPick)
-        {
-            Debug.Log(gameObject.name + " cannot be picked up. Player is too far away.");
-        }
-        */
+    void OnMouseDown()
+    {
+        Debug.Log("Hello there.");
     }
 }

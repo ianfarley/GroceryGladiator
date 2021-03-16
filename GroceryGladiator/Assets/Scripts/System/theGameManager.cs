@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class theGameManager : MonoBehaviour
 {
-    public static bool hasWon;
 
     void Start()
     {
-        hasWon = false;
+
     }
 
     void Update()
@@ -19,13 +18,14 @@ public class theGameManager : MonoBehaviour
     public static void WonTheGame()
     {
         Debug.Log("Player has won the game!");
-        hasWon = true;
         PlayerMovements.canMove = false;
+        UI_WinLoseText.SetText(1);
     }
 
     public static void LoseTheGame()
     {
         Debug.Log("Player has lost the game!");
         PlayerMovements.canMove = false;
+        UI_WinLoseText.SetText(0);
     }
 }
