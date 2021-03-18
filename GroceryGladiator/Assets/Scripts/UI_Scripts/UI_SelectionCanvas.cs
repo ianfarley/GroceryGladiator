@@ -5,28 +5,50 @@ using UnityEngine.UI;
 
 public class UI_SelectionCanvas : MonoBehaviour
 {
-    public GameObject ingredientObj;
-    public Image smallListCross, largeListCross;
-    public string objName;
-    void Start()
-    {
+    public GameObject canvasObj; //disable inspect canvas after selection
+    public Image smallListCross, largeListCross; //used to cross out the proper ingredient
+    public GameObject leftObj, midObj, rightObj; //used to "remove" ingredient from the shelf
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void OnSelectionClick()
+    public void OnLeftSelectionClick()
     {
         //Signal UI to update
         smallListCross.gameObject.SetActive(true);
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
+        this.gameObject.SetActive(false);
+        canvasObj.SetActive(false);
+        CollectibleBehavior.canPickUp = false;
+
         //Destroy object
-        Destroy(this.ingredientObj);
+        Destroy(this.leftObj);
+    }
+
+    public void OnMidSelectionClick()
+    {
+        //Signal UI to update
+        smallListCross.gameObject.SetActive(true);
+        largeListCross.gameObject.SetActive(true);
+        LevelManager.UpdateLevelCollectibles();
+        this.gameObject.SetActive(false);
+        canvasObj.SetActive(false);
+        CollectibleBehavior.canPickUp = false;
+
+        //Destroy object
+        Destroy(this.midObj);
+    }
+
+    public void OnRightSelectionClick()
+    {
+        //Signal UI to update
+        smallListCross.gameObject.SetActive(true);
+        largeListCross.gameObject.SetActive(true);
+        LevelManager.UpdateLevelCollectibles();
+        this.gameObject.SetActive(false);
+        canvasObj.SetActive(false);
+        CollectibleBehavior.canPickUp = false;
+
+        //Destroy object
+        Destroy(this.rightObj);
     }
 
     public void OnResumeClick()

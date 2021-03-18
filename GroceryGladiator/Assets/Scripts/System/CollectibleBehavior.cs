@@ -6,24 +6,26 @@ using UnityEngine.UI;
 public class CollectibleBehavior : MonoBehaviour
 {
     public string collectibleName;
-    public Button ingredientButton;
-    public Canvas myCanvas;
+    public Button inspectButton;
+    public Canvas inspectCanvas;
     public Canvas selectionCanvas;
     public GameObject playerObject;
     private float pickupRange = 2.0f;
+    public static bool canPickUp;
     void Start()
     {
         selectionCanvas.gameObject.SetActive(false);
-        myCanvas.gameObject.SetActive(false);
+        inspectCanvas.gameObject.SetActive(false);
        this.collectibleName = this.gameObject.name;
+        canPickUp = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(playerObject.transform.position, this.gameObject.transform.position) < pickupRange)
+        if (canPickUp && (Vector3.Distance(playerObject.transform.position, this.gameObject.transform.position) < pickupRange))
         {
-            myCanvas.gameObject.SetActive(true);
+            inspectCanvas.gameObject.SetActive(true);
         }
     }
 
@@ -33,10 +35,5 @@ public class CollectibleBehavior : MonoBehaviour
         {
             selectionCanvas.gameObject.SetActive(true);
         }
-    }
-
-    void OnMouseDown()
-    {
-        Debug.Log("Hello there.");
     }
 }
