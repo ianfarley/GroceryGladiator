@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UI_SelectionCanvas : MonoBehaviour
 {
-    public GameObject canvasObj; //disable inspect canvas after selection
+    public GameObject inspectorCanvasObj; //disable inspect canvas after selection
     public Image smallListCross, largeListCross; //used to cross out the proper ingredient
     public GameObject leftObj, midObj, rightObj; //used to "remove" ingredient from the shelf
 
@@ -16,7 +16,7 @@ public class UI_SelectionCanvas : MonoBehaviour
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
         this.gameObject.SetActive(false);
-        canvasObj.SetActive(false);
+        inspectorCanvasObj.SetActive(false);
         CollectibleBehavior.canPickUp = false;
 
         //Destroy object
@@ -30,7 +30,7 @@ public class UI_SelectionCanvas : MonoBehaviour
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
         this.gameObject.SetActive(false);
-        canvasObj.SetActive(false);
+        inspectorCanvasObj.SetActive(false);
         CollectibleBehavior.canPickUp = false;
 
         //Destroy object
@@ -44,7 +44,7 @@ public class UI_SelectionCanvas : MonoBehaviour
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
         this.gameObject.SetActive(false);
-        canvasObj.SetActive(false);
+        inspectorCanvasObj.SetActive(false);
         CollectibleBehavior.canPickUp = false;
 
         //Destroy object

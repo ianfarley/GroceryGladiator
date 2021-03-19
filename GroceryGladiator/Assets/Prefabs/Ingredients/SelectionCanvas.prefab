@@ -567,7 +567,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3017978111428945608}
         m_TargetAssemblyTypeName: UI_SelectionCanvas, Assembly-CSharp
-        m_MethodName: OnSelectionClick
+        m_MethodName: OnMidSelectionClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -769,9 +769,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c260e00d7e1442f438437b8f934c5e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientObj: {fileID: 0}
+  inspectorCanvasObj: {fileID: 0}
   smallListCross: {fileID: 0}
   largeListCross: {fileID: 0}
+  leftObj: {fileID: 0}
+  midObj: {fileID: 0}
+  rightObj: {fileID: 0}
 --- !u!1 &6589333306078539803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1031,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3017978111428945608}
         m_TargetAssemblyTypeName: UI_SelectionCanvas, Assembly-CSharp
-        m_MethodName: OnSelectionClick
+        m_MethodName: OnRightSelectionClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
