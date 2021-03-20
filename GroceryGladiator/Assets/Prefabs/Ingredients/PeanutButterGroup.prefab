@@ -9476,6 +9476,7 @@ MonoBehaviour:
   inspectCanvas: {fileID: 0}
   selectionCanvas: {fileID: 0}
   playerObject: {fileID: 0}
+  indexNum: 0
 --- !u!1 &6298620387024855915
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,11 +12,12 @@ public class CollectibleBehavior : MonoBehaviour
     public GameObject playerObject;
     private float pickupRange = 2.0f;
     public static bool canPickUp;
+
     void Start()
     {
         selectionCanvas.gameObject.SetActive(false);
         inspectCanvas.gameObject.SetActive(false);
-       this.collectibleName = this.gameObject.name;
+        this.collectibleName = this.gameObject.name;
         canPickUp = true;
     }
 

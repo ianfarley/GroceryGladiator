@@ -7,7 +7,7 @@ public class UI_SelectionCanvas : MonoBehaviour
 {
     public GameObject inspectorCanvasObj; //disable inspect canvas after selection
     public Image smallListCross, largeListCross; //used to cross out the proper ingredient
-    public GameObject leftObj, midObj, rightObj; //used to "remove" ingredient from the shelf
+    public GameObject leftObj, midObj, rightObj, ingredientObj; //used to "remove" ingredient from the shelf
 
     public void OnLeftSelectionClick()
     {
@@ -18,7 +18,7 @@ public class UI_SelectionCanvas : MonoBehaviour
         this.gameObject.SetActive(false);
         inspectorCanvasObj.SetActive(false);
         CollectibleBehavior.canPickUp = false;
-
+        ingredientObj.SetActive(true);
         //Destroy object
         Destroy(this.leftObj);
     }
@@ -32,7 +32,7 @@ public class UI_SelectionCanvas : MonoBehaviour
         this.gameObject.SetActive(false);
         inspectorCanvasObj.SetActive(false);
         CollectibleBehavior.canPickUp = false;
-
+        ingredientObj.SetActive(true);
         //Destroy object
         Destroy(this.midObj);
     }
@@ -46,7 +46,7 @@ public class UI_SelectionCanvas : MonoBehaviour
         this.gameObject.SetActive(false);
         inspectorCanvasObj.SetActive(false);
         CollectibleBehavior.canPickUp = false;
-
+        ingredientObj.SetActive(true);
         //Destroy object
         Destroy(this.rightObj);
     }
