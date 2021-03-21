@@ -14946,7 +14946,7 @@ GameObject:
   - component: {fileID: 173011529}
   - component: {fileID: 173011528}
   m_Layer: 0
-  m_Name: Plane-Funny (1)
+  m_Name: Funny Poster-KidsforSale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15023,11 +15023,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173011527}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 12.31, y: 3.9, z: -4.08}
+  m_LocalPosition: {x: 3.6230736, y: 0.9349389, z: 0.8740959}
   m_LocalScale: {x: 0.35510075, y: 1, z: 0.16727838}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -90}
 --- !u!1001 &210552920
 PrefabInstance:
@@ -16837,6 +16837,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &418687379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418687380}
+  m_Layer: 0
+  m_Name: Posters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &418687380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418687379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.686927, y: 2.9650612, z: -4.954096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1917872828}
+  - {fileID: 173011531}
+  - {fileID: 657051398}
+  - {fileID: 440394519}
+  - {fileID: 440571998}
+  - {fileID: 1600706819}
+  - {fileID: 1337612395}
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437620647
 GameObject:
   m_ObjectHideFlags: 0
@@ -16880,7 +16917,7 @@ GameObject:
   - component: {fileID: 440394517}
   - component: {fileID: 440394516}
   m_Layer: 0
-  m_Name: Plane-Funny (3)
+  m_Name: Funny Poster-YouMustBeThisTall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16919,7 +16956,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1328764687adc92419a0c60a33735b05, type: 2}
+  - {fileID: 2100000, guid: 7d4f8cbc8b92cc647b69358a8a836376, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16956,12 +16993,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440394515}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 10.16, y: 3.78, z: -13.13}
-  m_LocalScale: {x: 0.30599743, y: 1, z: 0.16570638}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 1.473073, y: 0.8149388, z: -8.175904}
+  m_LocalScale: {x: 0.30599743, y: 1, z: 0.16570637}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -180}
 --- !u!1 &440571994
 GameObject:
@@ -16976,7 +17013,7 @@ GameObject:
   - component: {fileID: 440571996}
   - component: {fileID: 440571995}
   m_Layer: 0
-  m_Name: Plane-Funny (4)
+  m_Name: Covid Poster-OutOfStock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17052,12 +17089,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440571994}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 3.99, y: 4.01, z: -13.08}
-  m_LocalScale: {x: 0.24701338, y: 1, z: 0.21733108}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -4.696927, y: 1.044939, z: -8.125904}
+  m_LocalScale: {x: 0.24701338, y: 1, z: 0.2173311}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -180}
 --- !u!1 &448732928 stripped
 GameObject:
@@ -17641,7 +17678,7 @@ Transform:
   - {fileID: 1430734397}
   - {fileID: 34582265}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -117.104, z: 0}
 --- !u!1001 &599391064
 PrefabInstance:
@@ -17812,7 +17849,7 @@ GameObject:
   - component: {fileID: 657051396}
   - component: {fileID: 657051395}
   m_Layer: 0
-  m_Name: Plane-Funny (2)
+  m_Name: Funny Poster-ILovePancakes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17851,7 +17888,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e5e3d7594a2ed948b7d3b2e384531c6, type: 2}
+  - {fileID: 2100000, guid: 3626adb4d40bb2b4f90c45174d306ccd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17889,11 +17926,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657051394}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 12.31, y: 3.8, z: -8.48}
+  m_LocalPosition: {x: 3.6230736, y: 0.83493876, z: -3.5259037}
   m_LocalScale: {x: 0.35510075, y: 1, z: 0.15871246}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -90}
 --- !u!1 &668022374
 GameObject:
@@ -18440,7 +18477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 078b6ca0e53dcfb4d9de9d829cd4cbf2, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 078b6ca0e53dcfb4d9de9d829cd4cbf2, type: 3}
       propertyPath: m_LocalScale.x
@@ -22811,7 +22848,7 @@ GameObject:
   - component: {fileID: 1337612393}
   - component: {fileID: 1337612392}
   m_Layer: 0
-  m_Name: Plane-Funny (6)
+  m_Name: Covid Poster-NoMaskService
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22887,12 +22924,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337612391}
-  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: -1.55, y: 3.71, z: -2.033}
-  m_LocalScale: {x: 0.35510075, y: 1, z: 0.16439866}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -10.236927, y: 0.74493885, z: 2.9210958}
+  m_LocalScale: {x: 0.35510066, y: 1, z: 0.16439863}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!1001 &1338607560
 PrefabInstance:
@@ -23368,7 +23405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 078b6ca0e53dcfb4d9de9d829cd4cbf2, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 078b6ca0e53dcfb4d9de9d829cd4cbf2, type: 3}
       propertyPath: m_LocalScale.x
@@ -25886,7 +25923,7 @@ GameObject:
   - component: {fileID: 1600706817}
   - component: {fileID: 1600706816}
   m_Layer: 0
-  m_Name: Plane-Funny (5)
+  m_Name: Covid Poster-NoHoarders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25962,12 +25999,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600706815}
-  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: 3.24, y: 3.8, z: -2.03}
-  m_LocalScale: {x: 0.35510075, y: 1, z: 0.18013059}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -5.446927, y: 0.83493876, z: 2.9240959}
+  m_LocalScale: {x: 0.35510066, y: 1, z: 0.18013056}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!1 &1604997230
 GameObject:
@@ -26461,7 +26498,7 @@ Transform:
   m_LocalScale: {x: 0.35510075, y: 1, z: 0.15470214}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!1 &1745178358
 GameObject:
@@ -29136,7 +29173,7 @@ GameObject:
   - component: {fileID: 1917872826}
   - component: {fileID: 1917872825}
   m_Layer: 0
-  m_Name: Plane-Funny
+  m_Name: Funny Poster-AssCreamCake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29212,12 +29249,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917872824}
-  m_LocalRotation: {x: 0, y: 0.70710677, z: -0.70710677, w: 0}
-  m_LocalPosition: {x: -6.9, y: 3.8, z: -2.033}
-  m_LocalScale: {x: 0.35510075, y: 1, z: 0.17938614}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
+  m_LocalPosition: {x: -15.586927, y: 0.83493876, z: 2.9210958}
+  m_LocalScale: {x: 0.35510066, y: 1, z: 0.17938611}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 418687380}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: -90}
 --- !u!1001 &1920336403
 PrefabInstance:
