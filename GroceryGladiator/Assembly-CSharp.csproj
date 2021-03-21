@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Individual_Level\DemoLevel.cs" />
      <Compile Include="Assets\Scripts\UI_Scripts\UI_Toggle_List.cs" />
      <Compile Include="Assets\Scripts\System\UI_WinLoseText.cs" />
+     <Compile Include="Assets\Scripts\Player\Cart_Items.cs" />
      <Compile Include="Assets\Scripts\System\UI_Timer.cs" />
      <Compile Include="Assets\Scripts\UI_Scripts\UI_SelectionCanvas.cs" />
      <Compile Include="Assets\Scripts\UI_Scripts\UI_FaceToCamera.cs" />

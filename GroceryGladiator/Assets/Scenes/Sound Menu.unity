@@ -2031,7 +2031,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 878894851}
         m_TargetAssemblyTypeName: UI_Functionality, Assembly-CSharp
-        m_MethodName: QuitToMainMenu
+        m_MethodName: Options
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -30,7 +30,22 @@ public class UI_Functionality : MonoBehaviour
     {
         SceneManager.LoadScene("Options Menu");
     }
-   
+
+    public void Sound()
+    {
+        SceneManager.LoadScene("Sound Menu");
+    }
+
+    public void Display()
+    {
+        SceneManager.LoadScene("Display Menu");
+    }
+
+    public void Controls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
