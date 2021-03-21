@@ -446,6 +446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inspect_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2987322272941841938, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
+      propertyPath: myButton
+      value: 
+      objectReference: {fileID: 1775109312955356951}
     - target: {fileID: 7252738155826818720, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -567,12 +571,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3206843483247196799, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
   m_PrefabInstance: {fileID: 7005354943110567877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1775109312955356951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8762441058103640274, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
+  m_PrefabInstance: {fileID: 7005354943110567877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &405011539794032997 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7252738155826818720, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
   m_PrefabInstance: {fileID: 7005354943110567877}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1775109312955356951}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}

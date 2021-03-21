@@ -16,10 +16,10 @@ public class UI_SelectionCanvas : MonoBehaviour
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
         this.gameObject.SetActive(false);
-        inspectorCanvasObj.SetActive(false);
-        CollectibleBehavior.canPickUp = false;
+
         ingredientObj.SetActive(true);
         //Destroy object
+        Destroy(inspectorCanvasObj);
         Destroy(this.leftObj);
     }
 
@@ -30,10 +30,11 @@ public class UI_SelectionCanvas : MonoBehaviour
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
         this.gameObject.SetActive(false);
-        inspectorCanvasObj.SetActive(false);
-        CollectibleBehavior.canPickUp = false;
+
         ingredientObj.SetActive(true);
+
         //Destroy object
+        Destroy(inspectorCanvasObj);
         Destroy(this.midObj);
     }
 
@@ -44,10 +45,11 @@ public class UI_SelectionCanvas : MonoBehaviour
         largeListCross.gameObject.SetActive(true);
         LevelManager.UpdateLevelCollectibles();
         this.gameObject.SetActive(false);
-        inspectorCanvasObj.SetActive(false);
-        CollectibleBehavior.canPickUp = false;
+
         ingredientObj.SetActive(true);
+
         //Destroy object
+        Destroy(inspectorCanvasObj);
         Destroy(this.rightObj);
     }
 

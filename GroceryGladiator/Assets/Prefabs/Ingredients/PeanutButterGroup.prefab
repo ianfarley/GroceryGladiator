@@ -9476,7 +9476,6 @@ MonoBehaviour:
   inspectCanvas: {fileID: 0}
   selectionCanvas: {fileID: 0}
   playerObject: {fileID: 0}
-  indexNum: 0
 --- !u!1 &6298620387024855915
 GameObject:
   m_ObjectHideFlags: 0
@@ -14562,6 +14561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed831dd7c9b009841a63f6d9e7653318, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
+  myButton: {fileID: 3229003015045112642}
 --- !u!1 &8877503469292304562
 GameObject:
   m_ObjectHideFlags: 0
