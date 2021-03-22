@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
+    public GameObject playerObj;
+    public GameObject bodyCam;
     private Rigidbody playerRig;
-    public float playerMoveSpeed = 130.0f;
+    public float playerMoveSpeed = 200.0f;
     public float playerRotationSpeed = 50.0f;
     public static bool canMove;
     [SerializeField] private Animator anim;
@@ -59,8 +61,58 @@ public class PlayerMovements : MonoBehaviour
         else if (canMove == false)
         {
             //Player cannot move!
-            //anim.SetBool("isMoving", false);
         }
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Grandma")
+        {
+            
+            canMove = false;
+            anim.SetBool("isMoving", false);
+            playerRig.AddForce(-transform.forward * 750.0f);
+            //StartCoroutine(spinMe());
+            StartCoroutine(stunMe());
+        }
+    }
+
+    private void OnColliderEnter(Collider col)
+    {
+        if(col.gameObject.tag == "Fart")
+        {
+            playerMoveSpeed = 100.0f;
+        }
+    }
+
+    private void OnColliderExit(Collider col)
+    {
+        if(col.gameObject.tag == "Fart")
+        {
+            playerMoveSpeed = 200.0f;
+        }    
+    }
+    /*
+    IEnumerator spinMe()
+    {
+        float i = 0.0f;
+        float stunTime = 3.0f;
+        bodyCam.transform.parent = null;
+        while (i < stunTime)
+        {
+            transform.Rotate(Vector3.up * 3.0f);
+            i += Time.fixedDeltaTime;
+            yield return null;
+        }
+        bodyCam.transform.parent = playerObj.transform;
+        canMove = true;
+    }
+    */
+
+    IEnumerator stunMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        canMove = true;
     }
 }

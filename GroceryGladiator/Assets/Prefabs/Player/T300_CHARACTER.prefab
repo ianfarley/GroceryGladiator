@@ -7089,6 +7089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbfcaa9dc78173c4ba1005aa1b6e7902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObj: {fileID: 1085776263577339564}
+  bodyCam: {fileID: 274748250418014007}
   playerMoveSpeed: 200
   playerRotationSpeed: 50
   anim: {fileID: 0}

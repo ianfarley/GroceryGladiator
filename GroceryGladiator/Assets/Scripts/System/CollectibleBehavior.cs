@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class CollectibleBehavior : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class CollectibleBehavior : MonoBehaviour
     public Canvas inspectCanvas;
     public Canvas selectionCanvas;
     public GameObject playerObject;
-    private float pickupRange = 2.0f;
+    private float pickupRange = 1.0f;
 
     void Start()
     {
