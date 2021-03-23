@@ -9472,9 +9472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectibleName: 
-  inspectButton: {fileID: 0}
-  inspectCanvas: {fileID: 0}
-  selectionCanvas: {fileID: 0}
+  inspectCanvas: {fileID: 1620884394724540889}
+  selectionCanvas: {fileID: 5984302785835836547}
   playerObject: {fileID: 0}
 --- !u!1 &6298620387024855915
 GameObject:
@@ -15706,6 +15705,10 @@ PrefabInstance:
       propertyPath: ingredientObj
       value: 
       objectReference: {fileID: 6256376998712969663}
+    - target: {fileID: 3017978111428945608, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: inspectorCanvasObj
+      value: 
+      objectReference: {fileID: 8827214489635433486}
     - target: {fileID: 3696071638411083028, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 212.8
@@ -15755,5 +15758,10 @@ PrefabInstance:
 --- !u!224 &6280477240650426613 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2564780049695706040, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+  m_PrefabInstance: {fileID: 8412531808209199949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &5984302785835836547 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2860861871124891598, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
   m_PrefabInstance: {fileID: 8412531808209199949}
   m_PrefabAsset: {fileID: 0}

@@ -7,13 +7,17 @@ public class PlayerMovements : MonoBehaviour
     public GameObject playerObj;
     public GameObject bodyCam;
     private Rigidbody playerRig;
-    public float playerMoveSpeed = 200.0f;
-    public float playerRotationSpeed = 50.0f;
+    
+    public float basePlayerMoveSpeed = 450.0f;
+    public float basePlayerRotationSpeed = 100.0f;
+    private float playerMoveSpeed, playerRotationSpeed;
     public static bool canMove;
     [SerializeField] private Animator anim;
 
     void Start()
     {
+        playerMoveSpeed = basePlayerMoveSpeed;
+        playerRotationSpeed = basePlayerRotationSpeed;
         canMove = true;
         playerRig = gameObject.GetComponent<Rigidbody>();
         anim = gameObject.GetComponent<Animator>();
@@ -69,7 +73,6 @@ public class PlayerMovements : MonoBehaviour
     {
         if(collision.gameObject.tag == "Grandma")
         {
-            
             canMove = false;
             anim.SetBool("isMoving", false);
             playerRig.AddForce(-transform.forward * 750.0f);
@@ -77,20 +80,14 @@ public class PlayerMovements : MonoBehaviour
             StartCoroutine(stunMe());
         }
 
-        if(collision.gameObject.tag == "Spill")
-        {
-            canMove = false;
-            anim.SetBool("isMoving", false);
-            playerRig.AddForce(-transform.forward * 1500.0f);
-            StartCoroutine(spillMe());
-        }
+
     }
 
     private void OnColliderEnter(Collider col)
     {
         if(col.gameObject.tag == "Fart")
         {
-            playerMoveSpeed = 100.0f;
+            playerMoveSpeed = (playerMoveSpeed / 2);
         }
     }
 
@@ -98,8 +95,27 @@ public class PlayerMovements : MonoBehaviour
     {
         if(col.gameObject.tag == "Fart")
         {
-            playerMoveSpeed = 200.0f;
+            playerMoveSpeed = basePlayerMoveSpeed;
         }    
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Spill")
+        {
+            playerMoveSpeed = playerMoveSpeed * 2.0f;
+            playerRotationSpeed = playerRotationSpeed * 1.5f;
+        }
+    }
+
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.tag == "Spill")
+        {
+            playerMoveSpeed = playerMoveSpeed * 2.0f;
+            playerRotationSpeed = playerRotationSpeed * 1.5f;
+            StartCoroutine(countMe(1.5f));
+        }
     }
     /*
     IEnumerator spinMe()
@@ -124,9 +140,10 @@ public class PlayerMovements : MonoBehaviour
         canMove = true;
     }
 
-    IEnumerator spillMe()
+    IEnumerator countMe(float inputTime)
     {
-        yield return new WaitForSeconds(5.0f);
-        canMove = true;
+        yield return new WaitForSeconds(inputTime);
+        playerMoveSpeed = basePlayerMoveSpeed;
+        playerRotationSpeed = basePlayerRotationSpeed;
     }
 }

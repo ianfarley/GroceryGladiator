@@ -10,7 +10,7 @@ public class CollectibleBehavior : MonoBehaviour
     public Canvas inspectCanvas;
     public Canvas selectionCanvas;
     public GameObject playerObject;
-    private float pickupRange = 1.0f;
+    private float pickupRange = 3.0f;
 
     void Start()
     {

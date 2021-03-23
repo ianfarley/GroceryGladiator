@@ -5,7 +5,7 @@ using UnityEngine;
 public class UI_FaceToCamera : MonoBehaviour
 {
     public GameObject playerObject;
-    private float pickupRange = 2.0f;
+    private float pickupRange = 3.0f;
     public GameObject myButton; 
 
     void Start()
