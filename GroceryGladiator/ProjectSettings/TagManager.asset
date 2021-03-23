@@ -8,6 +8,7 @@ TagManager:
   - Collectible
   - Exit
   - Grandma
+  - Spill
   layers:
   - Default
   - TransparentFX

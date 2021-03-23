@@ -76,6 +76,14 @@ public class PlayerMovements : MonoBehaviour
             //StartCoroutine(spinMe());
             StartCoroutine(stunMe());
         }
+
+        if(collision.gameObject.tag == "Spill")
+        {
+            canMove = false;
+            anim.SetBool("isMoving", false);
+            playerRig.AddForce(-transform.forward * 1500.0f);
+            StartCoroutine(spillMe());
+        }
     }
 
     private void OnColliderEnter(Collider col)
@@ -113,6 +121,12 @@ public class PlayerMovements : MonoBehaviour
     IEnumerator stunMe()
     {
         yield return new WaitForSeconds(2.0f);
+        canMove = true;
+    }
+
+    IEnumerator spillMe()
+    {
+        yield return new WaitForSeconds(5.0f);
         canMove = true;
     }
 }
