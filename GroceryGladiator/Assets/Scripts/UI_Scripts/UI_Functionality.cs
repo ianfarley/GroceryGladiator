@@ -12,7 +12,7 @@ public class UI_Functionality : MonoBehaviour
 
     public void PlayGame ()
     {
-        SceneManager.LoadScene("Noel_LevelBlockout");
+        SceneManager.LoadScene("Noel_LevelBlockout2");
     }
 
     public void QuitGame()
