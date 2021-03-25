@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 public class CollectibleBehavior : MonoBehaviour
 {
-    public string collectibleName;
     public Button inspectButton;
     public Canvas inspectCanvas;
     public Canvas selectionCanvas;
@@ -15,7 +14,6 @@ public class CollectibleBehavior : MonoBehaviour
     void Start()
     {
         selectionCanvas.gameObject.SetActive(false);
-        this.collectibleName = this.gameObject.name;
     }
 
     // Update is called once per frame

@@ -1962,8 +1962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c78a506fd519f54ea34de407488a62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectibleName: 
-  inspectButton: {fileID: 5265105572523311342}
   inspectCanvas: {fileID: 87662249689060401}
   selectionCanvas: {fileID: 94807373599955356}
   playerObject: {fileID: 0}
@@ -6741,6 +6739,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5106281316886879875}
     m_Modifications:
+    - target: {fileID: 351966868325472559, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662592109627808270, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -319
+      objectReference: {fileID: 0}
+    - target: {fileID: 662592109627808270, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -148
+      objectReference: {fileID: 0}
     - target: {fileID: 726940749821321611, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnMidSelectionClick
@@ -6748,6 +6758,30 @@ PrefabInstance:
     - target: {fileID: 740755972676412776, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnRightSelectionClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559034132955258858, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813445525511529518, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3767507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813445525511529518, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.4916842
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813445525511529518, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3767507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813445525511529518, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 339
+      objectReference: {fileID: 0}
+    - target: {fileID: 2137631512574560596, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2194355687669995390, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -6854,12 +6888,64 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3517471209764978610}
     - target: {fileID: 3017978111428945608, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: rightOption
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3017978111428945608, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
       propertyPath: inspectorCanvasObj
       value: 
       objectReference: {fileID: 3517471209764978610}
+    - target: {fileID: 3696071638411083028, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 343
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696071638411083028, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -148
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328197672965314012, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3767507
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328197672965314012, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.4916842
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328197672965314012, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3767507
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808304254651462577, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5767917499956583583, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -211.50003
+      objectReference: {fileID: 0}
     - target: {fileID: 5779022583563135686, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
       propertyPath: m_Name
       value: SelectionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6292543558554353330, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578264999460481461, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3767507
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578264999460481461, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.4916842
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578264999460481461, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.3767507
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578264999460481461, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -318
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd5c0be89c25d24799ec12ceff2d549, type: 3}
@@ -7018,14 +7104,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8762441058103640274, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
   m_PrefabInstance: {fileID: 3294259373472493134}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5265105572523311342 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7252738155826818720, guid: ca6493c92f827e54a9ba375a2be0d150, type: 3}
-  m_PrefabInstance: {fileID: 3294259373472493134}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6065784398425681564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

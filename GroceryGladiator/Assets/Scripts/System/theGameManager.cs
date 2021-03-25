@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class theGameManager : MonoBehaviour
 {
-
+    public UI_WinLoseText winLosePanel;
     void Start()
     {
 
@@ -15,17 +15,17 @@ public class theGameManager : MonoBehaviour
         //Reset variables when the scene is the menu
     }
 
-    public static void WonTheGame()
+    public void WonTheGame()
     {
         Debug.Log("Player has won the game!");
         PlayerMovements.canMove = false;
-        UI_WinLoseText.SetText(1);
+        winLosePanel.GetComponent<UI_WinLoseText>().OpenWinPanel();
     }
 
-    public static void LoseTheGame()
+    public void LoseTheGame()
     {
         Debug.Log("Player has lost the game!");
         PlayerMovements.canMove = false;
-        UI_WinLoseText.SetText(0);
+        winLosePanel.GetComponent<UI_WinLoseText>().OpenLosePanel();
     }
 }

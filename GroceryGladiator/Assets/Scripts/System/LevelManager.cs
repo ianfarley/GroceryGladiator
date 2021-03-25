@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    private static GameObject[] levelCollectibles;
-    private static int numOfCollectibles;
-    public static List<string> nameOfCollectibles;
-    public static bool canCheckOut;
-
+    private static GameObject[] levelCollectibles; //An array to hold all collectible gameobjects
+    private static int numOfCollectibles; //Gets number of ingredients on the level from levelCollectibles array
+    public static List<bool> collectedIngredients; //Store ingredients when player collect. Use True or False value to calculate the number of correct ingredients
+    public static int correctIngredients, totalNumOfCollect;
+    public static bool canCheckOut; 
+    
     void Start()
     {
+        collectedIngredients = new List<bool>();
+        collectedIngredients.Clear(); //useful for retrying a level
+        correctIngredients = 0;
         levelCollectibles = GameObject.FindGameObjectsWithTag("Collectible");
-        numOfCollectibles = levelCollectibles.Length;
-        nameOfCollectibles = new List<string>();
+        totalNumOfCollect = levelCollectibles.Length;
+        numOfCollectibles = totalNumOfCollect;
+        Debug.Log("Number of collectibles at start: " + totalNumOfCollect);
         canCheckOut = false;
-        for (int i = 0; i < numOfCollectibles; i++)
-        {
-            nameOfCollectibles.Add(levelCollectibles[i].name);
-        }
+        Debug.Log("Remaining Collectibles: " + numOfCollectibles);
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void UpdateLevelCollectibles()
     {
+        numOfCollectibles -= 1;
         if(numOfCollectibles > 0)
         {
             Debug.Log("Remaining Collectibles: " + numOfCollectibles);
@@ -31,14 +33,23 @@ public class LevelManager : MonoBehaviour
         else if (numOfCollectibles <= 0)
         {
             canCheckOut = true;
+            Debug.Log("Size of collectedIngredients: " + collectedIngredients.Count);
+            for(int i = 0; i < collectedIngredients.Count; i++)
+            {
+                if(collectedIngredients[i] == true)
+                {
+                    correctIngredients++;
+                }
+            }
+            Debug.Log("Num of correct Ingredients " + correctIngredients);
             Debug.Log("Exit is now available!");
         }
     }
 
-    public static void UpdateLevelCollectibles()
+    public void UpdatePlayerCollection(bool incomingValue) //index is based on the checklist
     {
-        //levelCollectibles = GameObject.FindGameObjectsWithTag("Collectible");
-        numOfCollectibles -= 1;
-        //nameOfCollectibles.Remove(collectedName);
+        Debug.Log("Adding item to cart with a value of " + incomingValue);
+        collectedIngredients.Add(incomingValue);
     }
 }
+

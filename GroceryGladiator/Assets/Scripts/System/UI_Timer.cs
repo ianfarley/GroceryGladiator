@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class UI_Timer : MonoBehaviour
 {
+    public theGameManager theGM;
     public Text timerText;
     private float currentTime = 9999.0f;
     public static float levelTime;
@@ -33,7 +34,7 @@ public class UI_Timer : MonoBehaviour
             {
                 currentTime = 0.0f;
                 ShowTime(currentTime);
-                theGameManager.LoseTheGame();
+                theGM.GetComponent<theGameManager>().LoseTheGame();
             }
         }
     }
@@ -42,7 +43,22 @@ public class UI_Timer : MonoBehaviour
     {
         float minute = Mathf.FloorToInt(theTime / 60);
         float second = Mathf.FloorToInt(theTime % 60);
-
+        if(minute > 1)
+        {
+            timerText.color = Color.white;
+        }
+        else if(minute == 0 && second <= 60)
+        {
+            if(second > 30)
+            {
+                timerText.color = Color.yellow;
+            }
+            else
+            {
+                timerText.color = Color.red;
+            }
+            
+        }
         timerText.text = string.Format("{0:00}:{1:00}", minute, second);
     }
 

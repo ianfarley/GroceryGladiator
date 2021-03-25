@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Win_Check : MonoBehaviour
 {
+    public theGameManager theGM;
     private void OnTriggerEnter(Collider other)
     {
         //Checks if it is the player that enter the collider
@@ -12,7 +13,7 @@ public class Win_Check : MonoBehaviour
             //Trigger win condition if the player can check
             if (LevelManager.canCheckOut == true)
             {
-                theGameManager.WonTheGame();
+                theGM.GetComponent<theGameManager>().WonTheGame();
                 UI_Timer.timeIsRunning = false;
             }
         }
