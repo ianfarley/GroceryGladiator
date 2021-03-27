@@ -80,24 +80,31 @@ public class PlayerMovements : MonoBehaviour
             StartCoroutine(stunMe());
         }
 
-
-    }
-
-    private void OnColliderEnter(Collider col)
-    {
-        if(col.gameObject.tag == "Fart")
+        if(collision.gameObject.tag == "Fart")
         {
-            playerMoveSpeed = (playerMoveSpeed / 2);
+            playerRig.AddForce(-transform.forward * 750.0f);
+            playerMoveSpeed = playerMoveSpeed * 2.5f;
+            StartCoroutine(countMe(1.5f));
         }
+
+
     }
 
-    private void OnColliderExit(Collider col)
-    {
-        if(col.gameObject.tag == "Fart")
-        {
-            playerMoveSpeed = basePlayerMoveSpeed;
-        }    
-    }
+    //private void OnColliderEnter(Collider col)
+    //{
+    //    if(col.gameObject.tag == "Fart")
+    //    {
+    //        playerMoveSpeed = (playerMoveSpeed / 2);
+    //    }
+    //}
+
+    //private void OnColliderExit(Collider col)
+    //{
+    //    if(col.gameObject.tag == "Fart")
+    //    {
+    //        playerMoveSpeed = basePlayerMoveSpeed;
+    //    }    
+    //}
 
     private void OnTriggerEnter(Collider col)
     {
