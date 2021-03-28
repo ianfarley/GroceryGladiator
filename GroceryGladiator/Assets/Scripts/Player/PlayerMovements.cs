@@ -7,6 +7,9 @@ public class PlayerMovements : MonoBehaviour
     public GameObject playerObj;
     public GameObject bodyCam;
     private Rigidbody playerRig;
+
+    public AudioSource audioSource;
+    public AudioClip maskOff;
     
     public float basePlayerMoveSpeed = 450.0f;
     public float basePlayerRotationSpeed = 100.0f;
@@ -82,6 +85,7 @@ public class PlayerMovements : MonoBehaviour
 
         if(collision.gameObject.tag == "Fart")
         {
+            audioSource.PlayOneShot(maskOff, 1.5f);
             playerRig.AddForce(-transform.forward * 750.0f);
             playerMoveSpeed = playerMoveSpeed * 2.5f;
             StartCoroutine(countMe(1.5f));
